@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="icon" href="/assets/await.png">
+    <link rel="stylesheet" href="GameStyle.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Rock - Paper - Scissors</h1>
+            <div id="score">
+                YOU: <span id="user-score">0</span> X CPU: <span id="cpu-score">0</span>
+            </div>
+            <div id="score-history" class="score-history-list"></div>
+        </header>
+        <section class="cards-container" >
+            <div class="card">
+                <img 
+                    onclick="getUserMove('rock')"
+                    title="rock"
+                    src="/assets/rock.png"
+                    width="110" height="150" alt="rock" />
+            </div>
+            <div class="card">
+                <img 
+                    onclick="getUserMove('paper')"
+                    title="paper"
+                    src="/assets/paper.png" alt="paper" />
+            </div>
+            <div class="card">
+                <img 
+                    onclick="getUserMove('scissors')"
+                    title="scissors"
+                    src="/assets/scissors.png" alt="scissors" />
+            </div>
+        </section>
+    </main>
+    <script src="./GameSettings.js"></script>
+</body>
+
+</html>
