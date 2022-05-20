@@ -44,8 +44,8 @@ function setGameHistory(userMove, cpuMove) {
     const $divScoreHistory = document.querySelector('#score-history');
     const gameHistory = 
     `<div class="score-history-container">
-        <span title="${userMove}"><img class="history-img" src="/assets/${userMove}.png" alt="${userMove}"></span>
-        <span title="${cpuMove}"><img class="history-img" src="/assets/${cpuMove}.png" alt="${cpuMove}"></span> 
+        <span title="${userMove}"><img class="history-img" src="./assets/${userMove}.png" alt="${userMove}"></span>
+        <span title="${cpuMove}"><img class="history-img" src="./assets/${cpuMove}.png" alt="${cpuMove}"></span> 
     </div>`;
 
     $divScoreHistory.insertAdjacentHTML('afterbegin', gameHistory);
